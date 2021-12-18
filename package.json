@@ -1,0 +1,25 @@
+{
+  "name": "only-sponsored-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityak74/only-sponsored-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityak74/only-sponsored-scraper/issues"
+  },
+  "homepage": "https://github.com/adityak74/only-sponsored-scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "jsonfile": "^6.1.0",
+    "puppeteer": "^13.0.0"
+  }
+}
