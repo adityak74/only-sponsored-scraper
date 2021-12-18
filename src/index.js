@@ -1,6 +1,6 @@
-const puppeteer = require('puppeteer');
-const cheerio = require('cheerio');
-const { writeFileSync } = require('jsonfile');
+import puppeteer from 'puppeteer';
+import cheerio from 'cheerio';
+import { writeFileSync } from 'jsonfile';
 
 let iter = 0;
 
