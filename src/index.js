@@ -1,7 +1,6 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-await-in-loop */
 import cheerio from 'cheerio';
-import { writeFileSync } from 'jsonfile';
 
 import Scraper from './scraper';
 
