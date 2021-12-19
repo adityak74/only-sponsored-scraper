@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 /* eslint-disable camelcase */
 /* eslint-disable no-await-in-loop */
 import cheerio from 'cheerio';
 
 import Scraper from './scraper';
 
+// eslint-disable-next-line func-names
 (async function () {
   const scraper = new Scraper({
     url: 'https://uktiersponsors.co.uk/',
