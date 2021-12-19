@@ -121,9 +121,9 @@ class Scraper {
     if (!data) {
       this.throwError('No data provided');
     }
-    const filenameWithTimestamp = `${filename}_${new Date().getTime()}.json`;
+    const filenameWithTimestamp = `${filename}_scrapedData_${new Date().getTime()}.json`;
     writeFileSync(filenameWithTimestamp, data, { spaces: 2 });
-    this.logMessage(`Wrote data to ${filename}`);
+    this.logMessage(`Wrote data to ${filenameWithTimestamp}`);
   }
 }
 
