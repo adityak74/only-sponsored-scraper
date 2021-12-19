@@ -30,8 +30,8 @@ class Scraper {
 
     const {
       url,
-      headless = true,
-      devtools = false,
+      headless,
+      devtools,
       slowRate,
       viewportWidth,
       viewportHeight,
@@ -63,8 +63,8 @@ class Scraper {
 
     this.urlToScrape = url;
     this.browserLaunchOpts = {
-      headless: headless || true,
-      devtools: devtools || false,
+      headless,
+      devtools,
       slowMo: Number(slowRate) || 0,
       defaultViewport: {
         width: Number(viewportWidth) || 1920,
@@ -79,7 +79,7 @@ class Scraper {
   }
 
   async setup() {
-    this.logMessage('Setting up browser, starting puppeteer, launching browser');
+    this.logMessage(`Setting up browser, starting puppeteer, launching browser with options ${JSON.stringify(this.browserLaunchOpts)}`);
     this.logMessage('Press Ctrl+C to exit');
     this.browserContext = await puppeteer.launch(this.browserLaunchOpts);
     this.browserPageContext = await this.browserContext.newPage();
